@@ -161,7 +161,6 @@ dependencies {
 //    modLocalRuntime compatLibs.snowmercy
     modCompileOnly (compatLibs.bundles.origins) { transitive = false }
     modLocalRuntime (compatLibs.bundles.origins)
-    modLocalImplementation (compatLibs.additionalEntityAttributes)
 
     modCompileOnly (compatLibs.eldritchMobs) { transitive = false }
 //    modLocalRuntime compatLibs.eldritchMobs
