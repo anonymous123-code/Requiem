@@ -1,6 +1,6 @@
 [versions]
 acu = "3.3.1"
-aea = "95f13798d1"
+aea = "1.19.2-SNAPSHOT"
 amecs = "1.1.5+mc21w16a"
 autoconfig = "3.2.2"
 apoli = "2.5.0"
