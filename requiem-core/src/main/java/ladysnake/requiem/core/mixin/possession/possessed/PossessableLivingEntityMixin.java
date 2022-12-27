@@ -196,6 +196,7 @@ public abstract class PossessableLivingEntityMixin extends Entity implements Pos
     public boolean isRegularEater() {
         return requiem_regularEater;
     }
+    
 
     /* * * * * * * * * * *
         Entity overrides
