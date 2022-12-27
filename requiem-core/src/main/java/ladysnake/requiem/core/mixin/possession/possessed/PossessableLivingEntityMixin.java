@@ -332,22 +332,6 @@ public abstract class PossessableLivingEntityMixin extends Entity implements Pos
         }
     }
 
-    /*
-    clearPotionEffects calls onStatusEffectRemoved before actually removing it, unlike everything else.
-    This causes issues, to which one of the simplest fix is to call remove() right after calling next().
-     */
-
-    @Redirect(method = "clearStatusEffects", at = @At(value = "INVOKE", target = "Ljava/util/Iterator;next()Ljava/lang/Object;", remap = false))
-    private Object swapIteratorOperationsPart1(Iterator<?> iterator) {
-        Object next = iterator.next();
-        iterator.remove();
-        return next;
-    }
-    @Redirect(method = "clearStatusEffects", at = @At(value = "INVOKE", target = "Ljava/util/Iterator;remove()V", remap = false))
-    private void swapIteratorOperationsPart2(Iterator<?> iterator) {
-        // NO-OP
-    }
-
     /* * * * * * * * * * * *
         Delegation land
      * * * * * * * * * * * */
