@@ -159,6 +159,7 @@ dependencies {
 //    modLocalRuntime compatLibs.pehkui
     modCompileOnly (compatLibs.snowmercy) { transitive = false }
 //    modLocalRuntime compatLibs.snowmercy
+    modCompileOnly (compatLibs.bundles.origins) { transitive = false }
 
     modCompileOnly (compatLibs.eldritchMobs) { transitive = false }
 //    modLocalRuntime compatLibs.eldritchMobs
